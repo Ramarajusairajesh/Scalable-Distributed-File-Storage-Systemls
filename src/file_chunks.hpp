@@ -1,8 +1,27 @@
 #include <fstream>
 #include <iostream>
+#include <openssl/md5.h>
 #include <regex>
 #include <string>
+
 #define CHUNK_FILE_SIZE 67108864
+
+struct chunk
+{
+        int chunk_id;
+        uint8_t rack_id;
+};
+
+struct chunk_storage
+{
+        std::string file_name;
+};
+
+struct metdata
+{
+        time_t timestamp;
+        std::string MD5_hash;
+};
 
 int chunk_creations(const std::string &file_path)
 {
