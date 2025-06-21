@@ -8,7 +8,8 @@ With a heartbeat protocol [to check health of other chunk servers in the chain].
 We don't replicate all the chunks on every server but we give a replication factor (example 3) to store them on multiple server ? ( to reduce writing latency and storage wastage)
 
 
-![Uploading WhatsApp Image 2025-06-20 at 19.50.51.jpeg…]()
+
+![WhatsApp Image 2025-06-20 at 19 50 51](https://github.com/user-attachments/assets/b3433691-8934-4130-b120-aa22491cf32a)
 
 
 It should be both server and rack aware ! 
