@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package heartbeat;
+
+message signal
+{
+        optional int cpu;
+        int disk;
+        int count;
+        enum hearbeat_signal
+        {
+                status = "1";
+        }
+}

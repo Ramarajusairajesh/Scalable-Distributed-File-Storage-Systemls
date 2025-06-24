@@ -21,14 +21,15 @@ struct cluster_detail
         server_detail details;
         system_resources resources;
 };
+
 class Head_server
 {
 
       private:
-        int send_signal(int cluster_fd) { return 0; }
+        int H_send_signal(int cluster_fd) { return 0; }
 
       public:
-        void receive_signal() { return; }
+        void H_receive_signal() { return; }
 };
 
 class Cluster_server
@@ -36,5 +37,5 @@ class Cluster_server
 
       private:
       public:
-        void receive_signal() { return; }
+        void C_heartbeat_response() {}
 };
