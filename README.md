@@ -26,7 +26,8 @@ Built a distributed file storage system to reduce read/write latency and ensure 
 
 ## Architecture Overview
 
-![image](https://github.com/user-attachments/assets/dcfde23c-b432-4e60-82d2-dac6a5e5f554)
+![image](https://github.com/user-attachments/assets/1497ce36-1209-423c-a113-e5aa68a40af6)
+
 
 - **Head Server:** Manages metadata, coordinates chunk servers, and monitors health.
 - **Chunk Servers:** Store file chunks, handle replication, and respond to health checks.
